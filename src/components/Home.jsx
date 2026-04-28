@@ -14,21 +14,17 @@ export default function Home(){
 
   const regions=["Africa", "Americas", "Asia", "Europe", "Oceania"]
 
-  useEffect(()=>{
-    const savedTheme=localStorage.getItem("dark")
-    if(savedTheme ){
-      setDark(savedTheme)
-    }
-  },[])
 
 
   useEffect(()=>{
     localStorage.setItem("dark", dark)
     if(dark){
       document.documentElement.classList.add("dark")
+
     }
     else{
       document.documentElement.classList.remove("dark")
+
     }
 
 

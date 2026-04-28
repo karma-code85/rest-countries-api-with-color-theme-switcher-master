@@ -8,6 +8,7 @@ import { Routes,Route } from "react-router-dom";
 export default function App(){
   const [dark ,setDark]=useState(false)
 
+
   useEffect(()=>{
     localStorage.setItem("dark", dark)
     if(!dark){
