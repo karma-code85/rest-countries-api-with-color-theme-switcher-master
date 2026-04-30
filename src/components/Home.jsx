@@ -1,5 +1,4 @@
 import CountryCard from "./CountryCard";
-import data from '../data.json'
 import { useState ,useEffect} from "react";
 
 
