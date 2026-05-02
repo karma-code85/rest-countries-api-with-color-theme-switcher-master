@@ -53,7 +53,7 @@ const filterd=countries.filter((country)=>{
   const matchesSearch=country.name
   .toLowerCase()
   .includes(search.toLowerCase())
-  const matchesRegion=region===""  || country.region ===region
+  const matchesRegion=region ===""  || country.region ===region
 
   return matchesSearch && matchesRegion
 })
@@ -106,7 +106,6 @@ const filterd=countries.filter((country)=>{
             flag={country.flags.png}
             des={country.name}
             region={country.region}
-
             />
 
           )
