@@ -5,7 +5,6 @@ import { useState ,useEffect} from "react";
 
 export default function Home(){
   const [countries, setCountries]=useState([])
-  const [loading , setLoading]=useState(true)
   const [search, setSearch]=useState("")
   const [region ,setRegion]=useState("")
   const [isOpen, setIsOpen]=useState(false)
@@ -41,9 +40,7 @@ export default function Home(){
      catch(error){
       console.log(error)
      }
-     finally{
-      setLoading(false)
-     }
+
     }
  fetchcountries()
     },
